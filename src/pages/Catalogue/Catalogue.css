@@ -1,0 +1,149 @@
+.catalogue__hero {
+  position: relative;
+  padding: 140px 8% 80px;
+  background: url('https://images.unsplash.com/photo-1565183997392-2f6f122e5912?w=1600') center/cover;
+  text-align: center;
+}
+.catalogue__hero-overlay {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.78);
+}
+.catalogue__hero-content { position: relative; z-index: 1; }
+.catalogue__hero-content h1 { font-size: clamp(2rem,4vw,3rem); font-weight: 900; margin-bottom: 10px; }
+.catalogue__hero-content p { color: #aaa; font-size: 1.05rem; }
+
+.catalogue__body {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+  padding: 50px 5%;
+  background: #0d0d0d;
+  min-height: 70vh;
+}
+
+/* Sidebar */
+.catalogue__sidebar {
+  background: var(--dark-card);
+  border: 1px solid rgba(201,168,76,0.12);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  height: fit-content;
+  position: sticky;
+  top: 90px;
+}
+.catalogue__sidebar h3 {
+  color: var(--gold);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.catalogue__search {
+  width: 100%;
+  padding: 10px 14px;
+  background: #1a1a1a;
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.25s;
+}
+.catalogue__search:focus { border-color: var(--gold); }
+.catalogue__sidebar-cat { margin-bottom: 18px; }
+.catalogue__sidebar-cat strong {
+  display: block;
+  color: #ccc;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.catalogue__sidebar-cat ul { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.catalogue__sidebar-cat a {
+  color: #888;
+  font-size: 0.88rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: block;
+  transition: var(--transition);
+}
+.catalogue__sidebar-cat a:hover { color: var(--gold); background: rgba(201,168,76,0.08); }
+
+/* Main */
+.catalogue__section { margin-bottom: 56px; }
+.catalogue__section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--gold);
+}
+.catalogue__section-header h2 { font-size: 1.3rem; font-weight: 700; }
+
+.catalogue__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+.catalogue__card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: var(--dark-card);
+  transition: var(--transition);
+  display: block;
+}
+.catalogue__card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+  box-shadow: 0 10px 30px rgba(201,168,76,0.12);
+}
+.catalogue__card-img-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 160px;
+}
+.catalogue__card-img-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.catalogue__card:hover .catalogue__card-img-wrap img { transform: scale(1.08); }
+.catalogue__card-overlay {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.catalogue__card:hover .catalogue__card-overlay { opacity: 1; }
+.catalogue__card-overlay span {
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.catalogue__card-body {
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.catalogue__card-body h3 { font-size: 0.92rem; font-weight: 700; color: #ddd; }
+.catalogue__card-body span {
+  font-size: 0.78rem;
+  color: var(--gold);
+  background: rgba(201,168,76,0.1);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+.catalogue__empty { text-align: center; padding: 60px; color: #666; font-size: 1.1rem; }
+
+@media (max-width: 900px) {
+  .catalogue__body { grid-template-columns: 1fr; }
+  .catalogue__sidebar { position: static; }
+}
