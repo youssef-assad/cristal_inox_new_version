@@ -1,8 +1,8 @@
 // CategoryProducts.jsx
 import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import data from '../../data/products.json';
-import './CategoryProducts.css';
+import data from '../../data/products_json.json';
+import './category_products.css';
 
 export default function CategoryProducts() {
   const { categoryId, subcategoryId } = useParams();

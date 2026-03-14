@@ -4,14 +4,15 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Catalogue from './pages/Catalogue/Catalogue';
-import CategoryProducts from './pages/CategoryProducts/CategoryProducts';
+import CategoryProducts from './pages/CategoryProducts/category_products';
 import ProductDetail from './pages/ProductDetail/ProductDetail';
 import Contact from './pages/Contact/Contact';
 import './App.css';
-
+import ScrollToTop from './components/ScrollToTop';
 export default function App() {
   return (
     <Router>
+     <ScrollToTop />
       <Navbar />
       <main>
         <Routes>

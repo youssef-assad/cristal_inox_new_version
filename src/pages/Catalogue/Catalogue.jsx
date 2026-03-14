@@ -1,7 +1,7 @@
 // Catalogue.jsx
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import data from '../../data/products.json';
+import data from '../../data/products_json.json';
 import './Catalogue.css';
 
 export default function Catalogue() {

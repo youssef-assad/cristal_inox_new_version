@@ -1,6 +1,6 @@
 // ProductDetail.jsx
 import { Link, useParams } from 'react-router-dom';
-import data from '../../data/products.json';
+import data from '../../data/products_json.json';
 import './ProductDetail.css';
 
 export default function ProductDetail() {
