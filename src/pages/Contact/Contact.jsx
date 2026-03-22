@@ -8,7 +8,7 @@ import './Contact.css';
 
 const CONTACT_ITEMS = [
   { icon: RiMailLine,   href: 'mailto:contact@artmetal.ma', text: 'contact@artmetal.ma' },
-  { icon: RiPhoneLine,  href: 'tel:+212661267456',          text: '+212 661 267 456' },
+  { icon: RiPhoneLine,  href: 'tel:+212661236987',          text: '+212 661 236 987' },
   { icon: RiMapPinLine, href: '#map',                        text: 'HH42+M3 Titt Mellilen, Casablanca' },
   { icon: RiTimeLine,   href: null,                          text: 'Lun – Sam : 8h – 18h' },
 ];
@@ -43,6 +43,7 @@ function useParallaxHero() {
 
 function useMagneticBtn(ref) {
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const btn = ref.current;
     if (!btn) return;
     const move = e => {

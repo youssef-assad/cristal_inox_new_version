@@ -54,6 +54,7 @@ function useHeroParallax() {
 function useTiltCards(selector) {
   useEffect(() => {
     const cards = document.querySelectorAll(selector);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const handlers = [];
     cards.forEach(card => {
       const move = (e) => {
