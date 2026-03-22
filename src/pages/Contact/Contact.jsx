@@ -32,15 +32,15 @@ export default function Contact() {
         <div className="contact__info animate-fade-up">
           <img
             src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600"
-            alt="Service client Cristal Inox"
+            alt="Service client artmetal"
             className="contact__info-img"
           />
           <div className="contact__info-text">
             <h2>Contactez nous !</h2>
             <p>Service client est à votre écoute !</p>
             <div className="contact__details">
-              <a href="mailto:contact@cristalinox.ma" className="contact__detail-item">
-                <span>📧</span><span>contact@cristalinox.ma</span>
+              <a href="mailto:contact@artmetal.ma" className="contact__detail-item">
+                <span>📧</span><span>contact@artmetal.ma</span>
               </a>
               <a href="tel:+212661236987" className="contact__detail-item">
                 <span>📞</span><span>+212 661 236 987</span>
@@ -109,7 +109,7 @@ export default function Contact() {
       {/* Map placeholder */}
       <div className="contact__map">
         <iframe
-          title="Cristal Inox Location"
+          title="artmetal Location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8!2d-7.6!3d33.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDMwJzAwLjAiTiA3wrAzNicwMC4wIlc!5e0!3m2!1sfr!2sma!4v1234567890"
           allowFullScreen="" loading="lazy"
         />

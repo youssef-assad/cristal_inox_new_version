@@ -72,7 +72,7 @@ export default function Home() {
         <div className="home__why-text animate-fade-up">
           <span className="home__why-badge">Pourquoi nous choisir ?</span>
           <h2>L'Excellence de l'Inox, <span className="gold-text">Artisanalement</span></h2>
-          <p>Chez Cristal Inox, chaque pièce est pensée pour offrir une résistance optimale, une finition irréprochable et une intégration parfaite dans son environnement. Nous combinons design contemporain et savoir-faire artisanal pour donner vie à vos projets.</p>
+          <p>Chez artmetal, chaque pièce est pensée pour offrir une résistance optimale, une finition irréprochable et une intégration parfaite dans son environnement. Nous combinons design contemporain et savoir-faire artisanal pour donner vie à vos projets.</p>
           <ul className="home__why-list">
             <li>✔ Matériaux certifiés normes internationales</li>
             <li>✔ Délais respectés et suivi personnalisé</li>
@@ -82,7 +82,7 @@ export default function Home() {
           <Link to="/about" className="btn-gold" style={{ marginTop: '24px' }}>En savoir plus sur nous</Link>
         </div>
         <div className="home__why-image">
-          <img src="https://images.unsplash.com/photo-1565183997392-2f6f122e5912?w=700" alt="Atelier Cristal Inox" />
+          <img src="https://images.unsplash.com/photo-1565183997392-2f6f122e5912?w=700" alt="Atelier artmetal" />
           <div className="home__why-badge-float">
             <span>⭐</span>
             <div><strong>Qualité premium</strong><small>Certifiée & garantie</small></div>

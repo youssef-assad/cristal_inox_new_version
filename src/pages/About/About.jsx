@@ -34,12 +34,12 @@ export default function About() {
         <div className="about__intro-text animate-fade-up">
           <h2>Votre Partenaire <span className="gold-text">en Inox</span></h2>
           <span className="gold-underline" />
-          <p>Chez <strong>Cristal Inox</strong>, basé à Casablanca, nous sommes spécialisés dans la conception et fabrication de structures en acier inoxydable pour la décoration, l'industrie, le médical et le secteur alimentaire. Nous combinons design contemporain, robustesse et savoir-faire artisanal pour donner vie à vos projets sur mesure.</p>
+          <p>Chez <strong>artmetal</strong>, basé à Casablanca, nous sommes spécialisés dans la conception et fabrication de structures en acier inoxydable pour la décoration, l'industrie, le médical et le secteur alimentaire. Nous combinons design contemporain, robustesse et savoir-faire artisanal pour donner vie à vos projets sur mesure.</p>
           <p>Nos réalisations respectent les normes les plus strictes. Chaque pièce est pensée pour offrir une <strong style={{color:'var(--gold)'}}>résistance optimale</strong>, une <strong style={{color:'var(--gold)'}}>finition irréprochable</strong>, et une <strong style={{color:'var(--gold)'}}>intégration parfaite</strong> dans son environnement, qu'il soit décoratif ou industriel.</p>
           <Link to="/catalogue" className="btn-gold" style={{ marginTop: '24px' }}>Découvrir nos services</Link>
         </div>
         <div className="about__intro-img">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700" alt="Cristal Inox atelier" />
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700" alt="artmetal atelier" />
         </div>
       </section>
 

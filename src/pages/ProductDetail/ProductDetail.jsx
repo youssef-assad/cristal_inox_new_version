@@ -55,7 +55,7 @@ export default function ProductDetail() {
           <div className="pd__contact-box">
             <p>Contactez-nous pour plus d'informations :</p>
             <a href="tel:+212661236987" className="pd__contact-item">📞 Téléphone : +212 661-236987</a>
-            <a href="mailto:contact@cristalinox.ma" className="pd__contact-item">📧 Email : contact@cristalinox.ma</a>
+            <a href="mailto:contact@artmetal.ma" className="pd__contact-item">📧 Email : contact@artmetal.ma</a>
             <Link to="/contact" className="btn-gold" style={{marginTop:'14px',display:'inline-block'}}>
               Demander un devis
             </Link>
