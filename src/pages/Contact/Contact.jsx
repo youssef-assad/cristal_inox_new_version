@@ -54,7 +54,7 @@ function useMagneticBtn(ref) {
     btn.addEventListener('mousemove', move);
     btn.addEventListener('mouseleave', leave);
     return () => { btn.removeEventListener('mousemove', move); btn.removeEventListener('mouseleave', leave); };
-  }, []);
+  }, [ref]);
 }
 
 /* ── Animated character counter for textarea ── */

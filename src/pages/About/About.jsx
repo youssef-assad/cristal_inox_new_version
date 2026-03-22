@@ -72,7 +72,7 @@ function useTiltCards(selector) {
       card.removeEventListener('mousemove', move);
       card.removeEventListener('mouseleave', leave);
     });
-  }, []);
+  }, [selector]);
 }
 
 /* ── Magnetic buttons ── */
