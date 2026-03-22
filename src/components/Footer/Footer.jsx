@@ -28,7 +28,7 @@ const SERVICES = [
 
 const CONTACT = [
   { icon: RiMailLine,    text: 'contact@artmetal.ma' },
-  { icon: RiPhoneLine,   text: '+212 661 236 987' },
+  { icon: RiPhoneLine,   text: '+212 661 267 456' },
   { icon: RiMapPinLine,  text: 'HH42+M3 Titt Mellilen, Casablanca' },
   { icon: RiTimeLine,    text: 'Lun – Sam : 8h – 18h' },
 ];
