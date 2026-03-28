@@ -9,12 +9,12 @@
           "label": "Chaises",
           "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=400",
           "products": [
-            { "id": "c1", "name": "Chaise moderne en inox", "description": "Une chaise élégante en inox avec un design minimaliste.", "image": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=600" },
+            { "id": "c1", "name": "Chaise moderne en inox", "description": "Une chaise élégante en inox avec un design minimaliste.", "image": "./products/portes/porte1.jpeg" },
             { "id": "c2", "name": "Chaise 2 moderne en inox", "description": "Chaise en inox doré avec motifs géométriques en nid d'abeille.", "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600" },
             { "id": "c3", "name": "Chaise 3 moderne en inox", "description": "Chaise en inox chromé avec assise rembourrée confortable.", "image": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=600" },
             { "id": "c4", "name": "Chaise 1 de bar en inox", "description": "Tabouret de bar en inox avec siège réglable en hauteur.", "image": "https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=600" },
             { "id": "c5", "name": "Chaise 2 de bar en inox", "description": "Duo de tabourets de bar en inox, design moderne et épuré.", "image": "https://images.unsplash.com/photo-1519947486511-46149fa0a254?w=600" },
-            { "id": "c6", "name": "Chaise 1 avec accoudoirs en inox", "description": "Fauteuil en inox avec accoudoirs, design sphérique original.", "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600" },
+            { "id": "c6", "name": "Chaise 1 avec accoudo/*  */irs en inox", "description": "Fauteuil en inox avec accoudoirs, design sphérique original.", "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600" },
             { "id": "c7", "name": "Chaise 2 avec accoudoirs en inox", "description": "Chaise de bureau ergonomique en inox avec accoudoirs bleus.", "image": "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=600" },
             { "id": "c8", "name": "Chaise 1 pliante en inox", "description": "Chaise pliante en inox noir, pratique et robuste.", "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=600" }
           ]
@@ -57,19 +57,32 @@
         {
           "id": "escaliers",
           "label": "Escaliers",
-          "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400",
+          "image": "./products/escaliers/e11.webp",
           "products": [
-            { "id": "e1", "name": "Escalier en inox et bois", "description": "Escalier sur mesure alliant inox doré et bois exotique.", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" },
-            { "id": "e2", "name": "Rampe d'escalier en inox", "description": "Rampe d'escalier en inox poli miroir, finition luxueuse.", "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600" }
+            { "id": "e1", "name": " Rampe d'escalier extérieure en fer laqué anthracite", "description": "Rampe d'escalier extérieure en fer carré laqué noir/anthracite, au design minimaliste et épuré. ", "image": "/products/escaliers/e1.jpeg" },
+            { "id": "e2", "name": " Rampe d'escalier en inox poli miroir avec décor à billes", "description": "ampe d'escalier intérieure entièrement réalisée en acier inoxydable poli miroir. ", "image": "/products/escaliers/e2.jpeg" },
+            { "id": "e3", "name": "Image 1 — Garde-corps d'escalier en inox poli avec balustres et billes décoratives", "description": "Garde-corps d'angle intérieur entièrement réalisé en acier inoxydable poli miroir.", "image": "/products/escaliers/e3.jpeg" },
+            { "id": "e4", "name": " Rampe d'escalier extérieure en inox à barres horizontales et billes", "description": "Rampe d'escalier extérieure en acier inoxydable poli, composée de quatre barres horizontales parallèles maintenues par des poteaux cylindriques surmontés de boules décoratives. ", "image": "/products/escaliers/e4.jpeg" }
           ]
         },
         {
           "id": "portails",
           "label": "Portails et clôtures",
-          "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400",
+          "image": "./products/portes/porte2.jpeg",
           "products": [
-            { "id": "p1", "name": "Portail en inox sur mesure", "description": "Portail coulissant en inox avec design géométrique moderne.", "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600" },
-            { "id": "p2", "name": "Clôture en inox", "description": "Clôture en inox robuste, idéale pour jardins et terrasses.", "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600" }
+            { "id": "p1", "name": "Portail en inox sur mesure", "description": "Grand portail de garage ou de propriété à deux vantaux, composé de profilés en acier inoxydable brillant et de panneaux en verre fumé noir. La combinaison métal et verre lui apporte un cachet moderne et haut de gamme, avec un système motorisé pour une ouverture automatisée.", "image": "/products/portes/porte2.jpeg" },
+          
+            { "id": "p2", "name": " Portail vitré à décor géométrique en métal découpé", "description": "Porte ou portail d'entrée à double vantail, associant un vantail plein à motifs briques et un vantail en verre avec une structure métallique découpée laser formant des rectangles imbriqués. ", "image": "/products/portes/porte4.jpeg" },
+            { "id": "p3", "name": "  Portail double battant en fer forgé arabesque", "description": "Portail d'entrée principal à deux vantaux en fer forgé noir, orné de volutes, rinceaux et motifs floraux réalisés à la main. ", "image": "/products/portes/porte3_.jpeg" },
+            { "id": "p4", "name": "  Portail double battant en fer à panneaux plats", "description": "Portail d'accès principal à deux vantaux assortis à la porte d'entrée, en fer laqué mat anthracite avec un motif de panneaux rectangulaires en relief. ", "image": "/products/portes/porte5.jpeg" }
+          ]
+        }, {
+          "id": "portes",
+          "label": "Portes",
+          "image": "./products/portes/porte1.jpeg",
+          "products": [
+            { "id": "pt1", "name": "Escalier en inox et bois", "description": "Escalier sur mesure alliant inox doré et bois exotique.", "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600" },
+            { "id": "e2", "name": "Rampe d'escalier en inox", "description": "Rampe d'escalier en inox poli miroir, finition luxueuse.", "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600" }
           ]
         }
       ]
