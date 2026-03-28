@@ -243,7 +243,6 @@
 .contact__field.is-focused::after { width: 100%; }
 .contact__field.has-error::after  { background: #e05555; width: 100%; }
 
-/* inputs */
 .contact__field input,
 .contact__field select,
 .contact__field textarea {
@@ -257,6 +256,8 @@
   font-family: var(--font-sans);
   resize: vertical;
   transition: border-color 0.25s, background 0.25s;
+  width: 100%;               /* ← add this */
+  box-sizing: border-box;    /* ← add this */
 }
 .contact__field input:focus,
 .contact__field select:focus,

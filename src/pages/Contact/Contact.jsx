@@ -235,12 +235,12 @@ export default function Contact() {
               <div style={{ position: 'relative' }}>
                 <textarea
                   name="message" value={form.message} onChange={handle}
-                  rows={5} maxLength={500}
+                  rows={5} maxLength={500} width='100%'
                   placeholder="Décrivez votre projet ou votre demande…"
                   onFocus={() => setFocused('message')}
                   onBlur={() => setFocused(null)}
                 />
-                <CharCounter value={form.message} max={500} />
+                <CharCounter value={form.message} />
               </div>
             </Field>
 
