@@ -1,7 +1,6 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Disallow: /static/
 Disallow: /asset-manifest.json
 
 Sitemap: https://artmetal.ma/sitemap.xml
