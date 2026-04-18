@@ -1,43 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#1a1a1a" />
+
+    <!-- SEO Meta Tags -->
+    <title>Artmetal — Chaudronnerie & Fabrication Inox à Casablanca | Décoration, Industrie, Médical</title>
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Artmetal, expert en chaudronnerie et fabrication d'acier inoxydable à Casablanca et Had Soualem. Décoration inox sur mesure, structures industrielles, mobilier médical et équipements alimentaires. Devis gratuit."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta
+      name="keywords"
+      content="chaudronnerie Casablanca, acier inoxydable Casablanca, décoration inox Casablanca, fabrication inox Casablanca, chaudronnerie Had Soualem, structure inox sur mesure Maroc, inox médical Casablanca, inox alimentaire Casablanca, artisan inox Casablanca, chaudronnier Casablanca, artmetal, garde-corps inox, portail inox, escalier inox Casablanca"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Artmetal" />
+    <meta name="geo.region" content="MA-CAS" />
+    <meta name="geo.placename" content="Casablanca" />
+    <meta name="geo.position" content="33.5;-7.6" />
+    <meta name="ICBM" content="33.5, -7.6" />
+    <link rel="canonical" href="https://artmetal.ma/" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Art Metal</title>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://artmetal.ma/" />
+    <meta property="og:title" content="Artmetal — Chaudronnerie & Fabrication Inox à Casablanca" />
+    <meta property="og:description" content="Expert en acier inoxydable à Casablanca. Décoration, industrie, médical, alimentaire. Fabrication sur mesure et installation. Devis gratuit." />
+    <meta property="og:image" content="https://artmetal.ma/logos/logo.png" />
+    <meta property="og:locale" content="fr_MA" />
+    <meta property="og:site_name" content="Artmetal" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Artmetal — Chaudronnerie & Fabrication Inox à Casablanca" />
+    <meta name="twitter:description" content="Expert en acier inoxydable à Casablanca. Décoration, industrie, médical, alimentaire. Fabrication sur mesure et installation." />
+    <meta name="twitter:image" content="https://artmetal.ma/logos/logo.png" />
+
+    <!-- JSON-LD Structured Data: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://artmetal.ma/#business",
+      "name": "Artmetal",
+      "alternateName": "Art Metal Casablanca",
+      "description": "Expert en chaudronnerie et fabrication d'acier inoxydable à Casablanca. Décoration inox sur mesure, structures industrielles, mobilier médical et équipements alimentaires.",
+      "url": "https://artmetal.ma",
+      "telephone": "+212661267456",
+      "email": "contact@artmetal.ma",
+      "image": "https://artmetal.ma/logos/logo.png",
+      "logo": "https://artmetal.ma/logos/logo.png",
+      "priceRange": "$$",
+      "currenciesAccepted": "MAD",
+      "paymentAccepted": "Espèces, Virement bancaire, Chèque",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "HH42+M3 Titt Mellilen",
+        "addressLocality": "Casablanca",
+        "addressRegion": "Casablanca-Settat",
+        "addressCountry": "MA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.5,
+        "longitude": -7.6
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Casablanca",
+          "sameAs": "https://fr.wikipedia.org/wiki/Casablanca"
+        },
+        {
+          "@type": "City",
+          "name": "Had Soualem"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Casablanca-Settat"
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://web.facebook.com/mahdi.hatim.1",
+        "https://www.instagram.com/abderrahim.assad/",
+        "https://wa.me/212661267456"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services Artmetal",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Chaudronnerie inox",
+              "description": "Fabrication et conception de structures en acier inoxydable à Casablanca"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Décoration inox sur mesure",
+              "description": "Mobilier, escaliers, portes et garde-corps en acier inoxydable"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Équipement industriel et médical en inox",
+              "description": "Tuyauterie, mobilier médical et équipements alimentaires en inox certifié"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Artmetal",
+      "url": "https://artmetal.ma",
+      "logo": "https://artmetal.ma/logos/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+212661267456",
+        "contactType": "customer service",
+        "availableLanguage": ["French", "Arabic"]
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite with search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Artmetal",
+      "url": "https://artmetal.ma",
+      "inLanguage": "fr",
+      "description": "Chaudronnerie et fabrication d'acier inoxydable à Casablanca"
+    }
+    </script>
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logos/logo.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>Artmetal — Expert en chaudronnerie et acier inoxydable à Casablanca. Activez JavaScript pour découvrir nos réalisations.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

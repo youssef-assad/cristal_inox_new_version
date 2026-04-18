@@ -4,19 +4,20 @@ import {
   RiSendPlaneLine, RiCheckLine, RiArrowRightLine,
   RiFacebookFill, RiInstagramLine, RiWhatsappLine,
 } from 'react-icons/ri';
+import SEO from '../../components/SEO';
 import './Contact.css';
 
 const CONTACT_ITEMS = [
   { icon: RiMailLine,   href: 'mailto:contact@artmetal.ma', text: 'contact@artmetal.ma' },
-  { icon: RiPhoneLine,  href: 'tel:+212661236987',          text: '+212 661 236 987' },
-  { icon: RiMapPinLine, href: '#map',                        text: 'HH42+M3 Titt Mellilen, Casablanca' },
+  { icon: RiPhoneLine,  href: 'tel:+212661267456',          text: '+212 661 267 456' },
+  { icon: RiMapPinLine, href: 'https://share.google/NQ4RrlgiUIBYq0taE',   text: 'HH42+M3 Titt Mellilen, Casablanca' },
   { icon: RiTimeLine,   href: null,                          text: 'Lun – Sam : 8h – 18h' },
 ];
 
 const SOCIALS = [
-  { icon: RiFacebookFill, href: '#', label: 'Facebook' },
-  { icon: RiInstagramLine, href: '#', label: 'Instagram' },
-  { icon: RiWhatsappLine, href: '#', label: 'WhatsApp' },
+  { icon: RiFacebookFill, href: 'https://web.facebook.com/mahdi.hatim.1', label: 'Facebook' },
+  { icon: RiInstagramLine, href: 'https://www.instagram.com/abderrahim.assad/', label: 'Instagram' },
+  { icon: RiWhatsappLine, href: 'https://wa.me/212661267456', label: 'WhatsApp' },
 ];
 
 /* ── Hooks ── */
@@ -111,16 +112,21 @@ export default function Contact() {
 
   return (
     <div className="contact">
+      <SEO
+        title="Contact — Devis Gratuit Chaudronnerie & Inox Casablanca"
+        description="Contactez Artmetal pour un devis gratuit. Chaudronnerie, fabrication et décoration en acier inoxydable à Casablanca et Had Soualem. Réponse sous 24h. Tél : +212 661 267 456."
+        canonical="https://artmetal.ma/contact"
+      />
 
       {/* ── HERO ── */}
       <section className="contact__hero">
         <div className="contact__hero-overlay" />
         <div className="contact__hero-content">
-          <span className="contact__hero-tag hero-anim-1">Contactez-nous</span>
+          <span className="contact__hero-tag hero-anim-1">Contactez Artmetal Casablanca</span>
           <h1 className="hero-anim-2">
-            Parlons de votre <span className="gold-text">projet</span>
+            Devis Gratuit <span className="gold-text">Chaudronnerie Inox</span>
           </h1>
-          <p className="hero-anim-3">Notre équipe vous répond sous 24h ouvrables</p>
+          <p className="hero-anim-3">Notre équipe de chaudronniers à Casablanca vous répond sous 24h ouvrables</p>
           <div className="contact__hero-chips hero-anim-4">
             <span className="hero-chip">Devis gratuit</span>
             <span className="hero-chip">Réponse rapide</span>
@@ -137,7 +143,7 @@ export default function Contact() {
           <div className="contact__info-img-wrap">
             <img
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700"
-              alt="Service client artmetal"
+              alt="Service client Artmetal — chaudronnerie acier inoxydable Casablanca"
             />
             <div className="contact__info-img-overlay" />
             <div className="contact__info-img-badge">
@@ -147,8 +153,8 @@ export default function Contact() {
           </div>
 
           <div className="contact__info-text">
-            <h2>On est là pour vous <span className="gold-text">aider</span></h2>
-            <p>Notre équipe est disponible du lundi au samedi pour répondre à toutes vos questions et concevoir votre projet sur mesure.</p>
+            <h2>Votre chaudronnier inox <span className="gold-text">à Casablanca</span></h2>
+            <p>Notre équipe est disponible du lundi au samedi pour répondre à toutes vos questions sur la fabrication inox et concevoir votre projet sur mesure. Nous intervenons à Casablanca, Had Soualem et dans tout le Maroc.</p>
 
             <ul className="contact__detail-list">
               {CONTACT_ITEMS.map(({ icon: Icon, href, text }, i) => (
@@ -161,7 +167,7 @@ export default function Contact() {
 
             <div className="contact__socials">
               {SOCIALS.map(({ icon: Icon, href, label }) => (
-                <a key={label} href={href} className="contact__social-btn" aria-label={label}>
+                <a key={label} href={href} className="contact__social-btn" aria-label={`Artmetal sur ${label}`}>
                   <Icon />
                 </a>
               ))}
@@ -172,8 +178,8 @@ export default function Contact() {
         {/* ── Form ── */}
         <div className="contact__form-wrap reveal reveal-right">
           <div className="contact__form-header">
-            <h2>Envoyez-nous <span className="gold-text">un message</span></h2>
-            <p>Remplissez le formulaire et nous vous recontactons rapidement.</p>
+            <h2>Demandez votre <span className="gold-text">devis gratuit</span></h2>
+            <p>Remplissez le formulaire et nous vous recontactons rapidement pour votre projet en acier inoxydable.</p>
           </div>
 
           {sent && (
@@ -222,7 +228,8 @@ export default function Contact() {
                   onBlur={() => setFocused(null)}
                 >
                   <option value="">Choisir un sujet…</option>
-                  <option>Demande de devis</option>
+                  <option>Devis chaudronnerie inox</option>
+                  <option>Devis décoration inox</option>
                   <option>Renseignement produit</option>
                   <option>Service après-vente</option>
                   <option>Partenariat</option>
@@ -236,7 +243,7 @@ export default function Contact() {
                 <textarea
                   name="message" value={form.message} onChange={handle}
                   rows={5} maxLength={500} width='100%'
-                  placeholder="Décrivez votre projet ou votre demande…"
+                  placeholder="Décrivez votre projet en acier inoxydable…"
                   onFocus={() => setFocused('message')}
                   onBlur={() => setFocused(null)}
                 />
@@ -263,10 +270,10 @@ export default function Contact() {
       {/* ── Map ── */}
       <div className="contact__map reveal reveal-up" id="map">
         <div className="contact__map-label">
-          <RiMapPinLine /> HH42+M3 Titt Mellilen, Casablanca
+          <RiMapPinLine /> Artmetal — HH42+M3 Titt Mellilen, Casablanca
         </div>
         <iframe
-          title="artmetal Location"
+          title="Artmetal Casablanca — Atelier chaudronnerie acier inoxydable"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8!2d-7.6!3d33.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDMwJzAwLjAiTiA3wrAzNicwMC4wIlc!5e0!3m2!1sfr!2sma!4v1234567890"
           allowFullScreen="" loading="lazy"
         />

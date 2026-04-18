@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import SEO from '../../components/SEO';
 import './Home.css';
 
 const services = [
-  { icon: '✏️', title: 'Conception & Conseil', desc: "Conseils techniques et esthétiques dès la conception pour garantir une solution inox optimale, adaptée à chaque projet décoratif ou industriel." },
-  { icon: '⚙️', title: 'Fabrication sur mesure', desc: "Production sur commande d'éléments en acier inoxydable, avec précision artisanale et contrôles qualité rigoureux à chaque étape." },
-  { icon: '🚚', title: 'Livraison & Installation', desc: "Transport sécurisé jusqu'au site client, avec installation sur place par nos experts pour un rendu final impeccable." },
+  { icon: '✏️', title: 'Conception & Conseil en Chaudronnerie', desc: "Conseils techniques et esthétiques dès la conception pour garantir une solution inox optimale, adaptée à chaque projet décoratif ou industriel à Casablanca et Had Soualem." },
+  { icon: '⚙️', title: 'Fabrication Inox Sur Mesure', desc: "Production sur commande d'éléments en acier inoxydable, avec précision artisanale et contrôles qualité rigoureux à chaque étape dans notre atelier à Casablanca." },
+  { icon: '🚚', title: 'Livraison & Installation', desc: "Transport sécurisé jusqu'au site client à Casablanca, Had Soualem et partout au Maroc, avec installation sur place par nos experts pour un rendu final impeccable." },
 ];
 
 const stats = [
@@ -16,9 +17,9 @@ const stats = [
 ];
 
 const highlights = [
-  { cat: 'Décoration intérieure', title: "Escaliers en acier inoxydable sur mesure", img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600' },
-  { cat: 'Tuyauterie', title: "Solutions de tuyauterie industrielle de haute qualité", img: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600' },
-  { cat: 'Métallerie', title: "Un intérieur mêlant finitions dorées et mobilier élégant", img: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600' },
+  { cat: 'Décoration inox Casablanca', title: "Escaliers en acier inoxydable sur mesure — conception et fabrication artisanale", img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600' },
+  { cat: 'Chaudronnerie industrielle', title: "Solutions de tuyauterie industrielle en inox de haute qualité", img: 'https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600' },
+  { cat: 'Métallerie inox', title: "Mobilier et finitions en acier inoxydable pour intérieurs haut de gamme", img: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600' },
 ];
 
 /* ── Hooks ── */
@@ -147,17 +148,22 @@ export default function Home() {
 
   return (
     <div className="home">
+      <SEO
+        title="Chaudronnerie & Fabrication Acier Inoxydable à Casablanca"
+        description="Artmetal, votre expert en chaudronnerie et acier inoxydable à Casablanca et Had Soualem. Décoration inox sur mesure, fabrication industrielle, mobilier médical et équipements alimentaires. Devis gratuit."
+        canonical="https://artmetal.ma/"
+      />
 
       {/* HERO */}
       <section className="home__hero">
         <div className="home__hero-overlay" />
         <div className="home__hero-content">
-          <span className="home__hero-tag hero-anim-1">Experts en Acier Inoxydable — Casablanca</span>
-          <h1 className="hero-anim-2">L'Inox <span className="gold-text">Réinventé</span> pour Votre Espace</h1>
-          <p className="hero-anim-3">Conception, fabrication et installation de structures en acier inoxydable pour la décoration, l'industrie, le médical et l'alimentaire.</p>
+          <span className="home__hero-tag hero-anim-1">Chaudronnerie & Acier Inoxydable — Casablanca & Had Soualem</span>
+          <h1 className="hero-anim-2">Fabrication <span className="gold-text">Inox Sur Mesure</span> à Casablanca</h1>
+          <p className="hero-anim-3">Artmetal, spécialiste en chaudronnerie et acier inoxydable depuis plus de 12 ans. Conception, fabrication et installation de structures inox pour la décoration, l'industrie, le médical et l'alimentaire à Casablanca et Had Soualem.</p>
           <div className="home__hero-btns hero-anim-4">
             <Link to="/catalogue" className="btn-gold">Voir le catalogue</Link>
-            <Link to="/contact" className="btn-outline">Demander un devis</Link>
+            <Link to="/contact" className="btn-outline">Demander un devis gratuit</Link>
           </div>
         </div>
         <div className="home__hero-scroll"><span>↓</span></div>
@@ -181,9 +187,9 @@ export default function Home() {
 
       {/* SERVICES */}
       <section className="home__services">
-        <p className="section-subtitle reveal reveal-up">Ce que nous faisons</p>
+        <p className="section-subtitle reveal reveal-up">Nos services de chaudronnerie inox</p>
         <h2 className="section-title reveal reveal-up" style={{ '--delay': '0.1s' }}>
-          Nos <span className="gold-text">Services</span>
+          Services de <span className="gold-text">Fabrication Inox</span> à Casablanca
         </h2>
         <span className="gold-underline reveal reveal-line" style={{ '--delay': '0.2s' }} />
         <div className="home__services-grid">
@@ -202,41 +208,41 @@ export default function Home() {
       {/* WHY US */}
       <section className="home__why">
         <div className="home__why-text reveal reveal-left">
-          <span className="home__why-badge">Pourquoi nous choisir ?</span>
-          <h2>L'Excellence de l'Inox, <span className="gold-text">Artisanalement</span></h2>
-          <p>Chez artmetal, chaque pièce est pensée pour offrir une résistance optimale, une finition irréprochable et une intégration parfaite dans son environnement.</p>
+          <span className="home__why-badge">Pourquoi choisir Artmetal ?</span>
+          <h2>L'Excellence de la <span className="gold-text">Chaudronnerie Inox</span> à Casablanca</h2>
+          <p>Chez Artmetal, chaque pièce en acier inoxydable est pensée pour offrir une résistance optimale, une finition irréprochable et une intégration parfaite dans son environnement. Notre atelier à Casablanca dessert également Had Soualem et tout le Maroc.</p>
           <ul className="home__why-list">
-            {['Matériaux certifiés normes internationales','Délais respectés et suivi personnalisé','Équipe technique qualifiée et expérimentée','Solutions sur mesure pour tous budgets'].map((item, i) => (
+            {['Acier inoxydable certifié normes internationales','Délais respectés et suivi personnalisé','Équipe de chaudronniers qualifiés et expérimentés','Solutions inox sur mesure pour tous budgets'].map((item, i) => (
               <li key={i} className="reveal reveal-left" style={{ '--delay': `${0.1 + i * 0.1}s` }}>
                 <span className="why-check">✔</span> {item}
               </li>
             ))}
           </ul>
           <Link to="/about" className="btn-gold" style={{ marginTop: '28px', display: 'inline-flex' }}>
-            En savoir plus sur nous
+            En savoir plus sur Artmetal
           </Link>
         </div>
         <div className="home__why-image reveal reveal-right">
-          <img src="https://images.unsplash.com/photo-1565183997392-2f6f122e5912?w=700" alt="Atelier artmetal" />
+          <img src="https://images.unsplash.com/photo-1565183997392-2f6f122e5912?w=700" alt="Atelier de chaudronnerie Artmetal à Casablanca — fabrication acier inoxydable" />
           <div className="home__why-badge-float">
             <span>⭐</span>
-            <div><strong>Qualité premium</strong><small>Certifiée & garantie</small></div>
+            <div><strong>Qualité premium</strong><small>Inox certifié & garanti</small></div>
           </div>
         </div>
       </section>
 
       {/* HIGHLIGHTS */}
       <section className="home__highlights">
-        <p className="section-subtitle reveal reveal-up">Nos travaux récents</p>
+        <p className="section-subtitle reveal reveal-up">Réalisations en acier inoxydable</p>
         <h2 className="section-title reveal reveal-up" style={{ '--delay': '0.1s' }}>
-          Nos <span className="gold-text">Réalisations</span>
+          Nos <span className="gold-text">Réalisations Inox</span>
         </h2>
         <span className="gold-underline reveal reveal-line" style={{ '--delay': '0.2s' }} />
         <div className="home__highlights-grid">
           {highlights.map((h, i) => (
             <div className="home__highlight-card reveal reveal-up" key={i} style={{ '--delay': `${0.1 + i * 0.15}s` }}>
               <div className="home__highlight-img-wrap">
-                <img src={h.img} alt={h.title} />
+                <img src={h.img} alt={h.title} loading="lazy" />
                 <div className="home__highlight-overlay">
                   <Link to="/catalogue" className="highlight-overlay-btn">Voir le projet →</Link>
                 </div>
@@ -253,10 +259,10 @@ export default function Home() {
       {/* CTA BANNER */}
       <section className="home__cta-banner reveal reveal-up">
         <div className="home__cta-text">
-          <h2>Prêt à démarrer votre projet ?</h2>
-          <p>Contactez-nous aujourd'hui pour un devis gratuit et personnalisé.</p>
+          <h2>Un projet en acier inoxydable à Casablanca ?</h2>
+          <p>Contactez Artmetal aujourd'hui pour un devis gratuit et personnalisé. Chaudronnerie, décoration inox et fabrication sur mesure.</p>
         </div>
-        <Link to="/contact" className="btn-gold btn-gold--lg">Contactez-nous</Link>
+        <Link to="/contact" className="btn-gold btn-gold--lg">Demander un devis gratuit</Link>
       </section>
 
     </div>

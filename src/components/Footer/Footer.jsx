@@ -18,12 +18,12 @@ const NAV_LINKS = [
 ];
 
 const SERVICES = [
-  'Conception sur mesure',
-  'Fabrication inox 316L',
-  'Garde-corps & rampes',
-  'Portails & clôtures',
-  'Livraison & installation',
-  'Conseil technique',
+  'Chaudronnerie inox',
+  'Fabrication inox 316L sur mesure',
+  'Garde-corps & rampes en inox',
+  'Portails & clôtures inox',
+  'Décoration acier inoxydable',
+  'Livraison & installation Casablanca',
 ];
 
 const CONTACT = [
@@ -100,7 +100,7 @@ export default function Footer() {
             <img src="./logos/logo.png" alt="artmetal" className='footer__logo-diamond'/>
             <span className="footer__logo-name">artmetal</span>
           </Link>
-          <p>Experts en acier inoxydable à Casablanca. Design, durabilité et savoir-faire artisanal depuis 2005 pour chaque projet décoratif et industriel.</p>
+          <p>Artmetal — experts en chaudronnerie et acier inoxydable à Casablanca et Had Soualem. Fabrication sur mesure, décoration inox, industrie, médical et alimentaire depuis plus de 12 ans.</p>
           <div className="footer__socials">
             {SOCIALS.map(({ icon: Icon, label, href }) => (
               <a key={label} href={href} className="footer__social-btn" aria-label={label} target="_blank" rel="noopener noreferrer">
@@ -172,7 +172,7 @@ export default function Footer() {
       {/* ── Bottom bar ── */}
       <div className="footer__bottom">
         <span className="footer__bottom-copy">
-          © {new Date().getFullYear()} artmetal — Tous droits réservés · Fait avec ♥ à Casablanca
+          © {new Date().getFullYear()} Artmetal — Chaudronnerie & acier inoxydable à Casablanca · Tous droits réservés
         </span>
         <div className="footer__bottom-links">
           <Link to="/privacy">Politique de confidentialité</Link>

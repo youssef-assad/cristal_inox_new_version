@@ -1,6 +1,7 @@
 // Catalogue.jsx
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import data from '../../data/products_json.json';
 import './Catalogue.css';
 
@@ -16,18 +17,24 @@ export default function Catalogue() {
 
   return (
     <div className="catalogue">
+      <SEO
+        title="Catalogue Inox — Mobilier, Décoration, Industrie & Médical"
+        description="Découvrez le catalogue Artmetal : mobilier en acier inoxydable, décoration inox sur mesure, escaliers, portails, équipements industriels et médicaux. Fabrication à Casablanca, livraison Had Soualem et tout le Maroc."
+        canonical="https://artmetal.ma/catalogue"
+      />
+
       <div className="catalogue__hero">
         <div className="catalogue__hero-overlay" />
         <div className="catalogue__hero-content animate-fade-up">
-          <h1>Notre <span className="gold-text">Catalogue</span></h1>
-          <p>Découvrez toutes nos collections en acier inoxydable</p>
+          <h1>Catalogue <span className="gold-text">Acier Inoxydable</span></h1>
+          <p>Découvrez toutes nos collections en inox fabriquées sur mesure à Casablanca — décoration, industrie, médical et alimentaire</p>
         </div>
       </div>
 
       <div className="catalogue__body">
         {/* SIDEBAR */}
         <aside className="catalogue__sidebar">
-          <h3>Rechercher vos besoins</h3>
+          <h3>Rechercher vos besoins en inox</h3>
           <input
             className="catalogue__search"
             placeholder="Rechercher une sous-catégorie..."
@@ -65,7 +72,7 @@ export default function Catalogue() {
                     className="catalogue__card"
                   >
                     <div className="catalogue__card-img-wrap">
-                      <img src={sub.image} alt={sub.label} />
+                      <img src={sub.image} alt={`${sub.label} en acier inoxydable — Artmetal Casablanca`} loading="lazy" />
                       <div className="catalogue__card-overlay">
                         <span>Voir les produits →</span>
                       </div>

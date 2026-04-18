@@ -1,6 +1,7 @@
 // CategoryProducts.jsx
 import { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import data from '../../data/products_json.json';
 import './category_products.css';
 
@@ -19,19 +20,25 @@ export default function CategoryProducts() {
 
   return (
     <div className="cp">
+      <SEO
+        title={`${sub.label} en Acier Inoxydable — ${cat.label}`}
+        description={`${sub.label} en acier inoxydable par Artmetal Casablanca. ${sub.products.length} produits disponibles. Fabrication inox sur mesure, livraison Casablanca et Had Soualem. Demandez votre devis gratuit.`}
+        canonical={`https://artmetal.ma/catalogue/${categoryId}/${subcategoryId}`}
+      />
+
       <div className="cp__header">
         <div className="cp__header-overlay" />
         <div className="cp__header-content animate-fade-up">
-          <Link to="/catalogue" className="cp__back">← Retour</Link>
-          <h1>{sub.label}</h1>
-          <p>{cat.label}</p>
+          <Link to="/catalogue" className="cp__back">← Retour au catalogue</Link>
+          <h1>{sub.label} <span className="gold-text">en Acier Inoxydable</span></h1>
+          <p>{cat.label} — Fabrication sur mesure à Casablanca</p>
         </div>
       </div>
 
       <div className="cp__body">
         {/* Sidebar */}
         <aside className="cp__sidebar">
-          <h3>Rechercher un produit</h3>
+          <h3>Rechercher un produit inox</h3>
           <input
             className="cp__search"
             placeholder="Rechercher un produit..."
@@ -42,7 +49,7 @@ export default function CategoryProducts() {
             <p><span className="gold-text">{sub.products.length}</span> produits disponibles</p>
           </div>
           <div className="cp__sidebar-contact">
-            <p>Besoin d'un devis ?</p>
+            <p>Besoin d'un devis pour vos {sub.label.toLowerCase()} en inox ?</p>
             <Link to="/contact" className="btn-gold" style={{width:'100%',textAlign:'center',marginTop:'10px',display:'block'}}>
               Nous contacter
             </Link>
@@ -63,7 +70,7 @@ export default function CategoryProducts() {
                 style={{ animationDelay: `${i * 0.06}s` }}
               >
                 <div className="cp__card-img">
-                  <img src={p.image} alt={p.name} loading="lazy" />
+                  <img src={p.image} alt={`${p.name} — fabrication inox Artmetal Casablanca`} loading="lazy" />
                   <div className="cp__card-overlay"><span>Voir le détail →</span></div>
                 </div>
                 <div className="cp__card-body">

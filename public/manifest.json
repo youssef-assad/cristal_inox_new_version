@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Artmetal",
+  "name": "Artmetal — Chaudronnerie & Acier Inoxydable Casablanca",
+  "description": "Expert en chaudronnerie et fabrication d'acier inoxydable à Casablanca et Had Soualem. Décoration, industrie, médical, alimentaire.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +9,15 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logos/logo.png",
       "type": "image/png",
       "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#1a1a1a",
+  "background_color": "#0d0d0d",
+  "lang": "fr",
+  "categories": ["business", "shopping"]
 }
